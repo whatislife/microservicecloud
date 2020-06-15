@@ -86,6 +86,14 @@
                     </delimiters>
                 </configuration>
             </plugin>
+<!--            热部署插件-->
+            <!--<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>-->
         </plugins>
     </build>
 
