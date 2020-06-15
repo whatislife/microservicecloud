@@ -29,5 +29,9 @@ public class DeptController {
     public List<Dept> list(){
         return deptService.list();
     }
+    @PostMapping(value="/dept/listAll")
+    public List<Dept> listAll(){
+        return deptService.list();
+    }
 
 }
