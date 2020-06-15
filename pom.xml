@@ -94,6 +94,7 @@
                     <fork>true</fork>
                 </configuration>
             </plugin>-->
+<!--     打包运行没清单问题  https://www.cnblogs.com/zrbfree/p/7698923.html-->
         </plugins>
     </build>
 
