@@ -2,6 +2,7 @@ package com.atguigu.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @create 2020-06-16 13:32
  */
 @SpringBootApplication
+@EnableEurekaClient
 @EnableFeignClients(basePackages= {"com.atguigu.springcloud"})
 //@EnableFeignClients(basePackageClasses= {com.atguigu.springcloud.service.DeptClientService.class})
 @ComponentScan("com.atguigu.springcloud")

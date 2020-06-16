@@ -18,7 +18,7 @@ public interface DeptClientService {
     @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
     public Dept get(@PathVariable("id") long id);
 
-    @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/dept/list", method = RequestMethod.POST)
     public List<Dept> list();
 
     @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
