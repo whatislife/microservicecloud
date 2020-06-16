@@ -12,7 +12,9 @@ import java.util.List;
  * @author frnakman
  * @create 2020-06-16 13:35
  */
-@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+//@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+//服务降级使用  从容错部分代码提升到接口层面 重要理解很重要
+@FeignClient(value = "MICROSERVICECLOUD-DEPT",fallbackFactory=DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
